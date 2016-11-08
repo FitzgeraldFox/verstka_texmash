@@ -1,0 +1,59 @@
+.tooltip {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 100%;left: 0;
+  width: 100%;
+  min-height: 60px;
+  z-index: 200;
+}
+
+.tooltip a {
+  color: #12477a;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.tooltip.phone_tooltip a{
+  font-size: 1.1rem;
+}
+
+.tooltip.mail_tooltip a{
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+
+.tooltip .close-tooltip {
+  font-size: 27px;
+  position: absolute;
+  right: 6px;
+  top: 0px;
+}
+
+.tooltip.phone_tooltip a:hover {
+  color: #3fa0ff;
+}
+
+.change_font_size > .change_fz_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-height: 60px;
+  font-size: 41px;
+}
+
+.change_font_size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change_fz_item:hover, .change_fz_item:active, .change_fz_item:focus {
+  background-color: #12477a;
+  color: #fff;
+}
+
+.change_fz_item {
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}

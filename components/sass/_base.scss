@@ -1,0 +1,464 @@
+@import "colors";
+@import "fonts";
+
+html{
+  font-weight: normal;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+html * {max-height:1000000px;}
+
+body{
+  color: $text2;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button{
+  cursor: pointer !important;
+}
+
+input[type="file"]{
+  cursor: pointer;
+}
+
+button{
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+img{
+  max-width: 100%;
+}
+
+.headerType1{
+  width: 100%;
+  text-shadow: #12477a 4px 4px, #12477a -4px 4px, #12477a 0px 4px, #12477a 4px -2px, #12477a -4px -2px, #12477a -4px -4px, #12477a 4px -4px, #12477a 0px -4px, #12477a 4px 0px, #12477a -4px 0 , #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, rgb(0, 0, 0) 0 0 30px;
+  color: white;
+  font: normal 46px Warface;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.submit_button1, .submit_button2{
+  background-color: $back1;
+  max-width: 393px;
+  padding: 20px 55px;
+  font: normal 33px Warface;
+  color: white;
+  text-shadow: #12477a 3px 0px, #12477a 3px 3px, #12477a 0px 3px, #12477a -3px 0px, #12477a -3px 3px, #12477a -3px 0px, #12477a -3px -3px, #12477a 0px -3px, #12477a 3px -3px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+  &:hover{
+    background-color: $back6;
+    color: $text4;
+    border-radius: 10px;
+  }
+}
+
+.submit_button1{
+  &:hover{
+    color: #ffffff;
+  }
+}
+
+.submit_button2{
+  background-color: $back4;
+  color: $text2;
+  text-shadow: $text3 3px 0px, $text3 3px 3px, $text3 0px 3px, $text3 -3px 0px, $text3 -3px 3px, $text3 -3px 0px, $text3 -3px -3px, $text3 0px -3px, $text3 3px -3px;
+}
+
+.form_style1, .form_style2{
+  input, select, textarea{
+    width: 45%;
+    height: 59px;
+    font: normal 1rem Warface;
+    color: $text2;
+    box-shadow: inset 3px 0 8.7px 0.3px #6c6c6c;
+    border: 0;
+    padding: 0 20px;
+    margin: 18px;
+    min-width: 300px;
+    &:hover, &:focus{
+      box-shadow: inset 3px 0 8.7px 0.3px #0083ff;
+    }
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color:    $text2;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    $text2;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    $text2;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    $text2;
+    }
+  }
+  textarea{
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+  }
+}
+
+.form_style2 {
+  input, select, textarea{
+    width: 100%;
+    max-width: 598px;
+    margin: 9px 18px;
+    background-color: $back5;
+    box-shadow: inset 3px 0 8.7px 0.3px #1e2a35;
+    color: $text3;
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color:    $text3;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    $text3;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    $text3;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    $text3;
+    }
+  }
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.left_aside{
+  background-color: $back7;
+  padding: 15px;
+  position: fixed;
+  max-width: 340px;
+  width: 25.56%;
+  max-height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  z-index: 100;
+  &::-webkit-scrollbar { width: 0; }
+}
+
+.aside_child{
+  overflow: hidden;
+}
+
+.contact_icons{
+  text-align: center;
+  position: relative;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0;
+    width: 54px;
+    height: 36px;
+    cursor: pointer;
+  }
+  i{
+    font-size: 40px;
+    color: $text2;
+    transition: color 0.15s ease-in-out;
+    &:hover{
+      color: $text4;
+    }
+  }
+}
+
+.main_menu li {  
+  a {
+    display: block;
+    width: 100%;
+    font: normal 0.92rem Warface;
+    color: $text1;
+    padding: 5px;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    &:hover, &.active{
+      background-color: #00a0ff;
+      color: #fff;
+    }
+  }
+  &:not(:last-child){
+    border-bottom: 1px dotted #357ebd;
+  }
+}
+
+.order_button {
+  color: white;
+  font: normal 25px Warface;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 29px 20px;
+  margin: 23px auto;
+  max-width: 310px;
+  cursor: pointer;
+  background-color: #1f6fbd;
+  transition: background-color 0.15s ease-in-out, border-radius 0.15s ease-in-out ;
+  &:hover {
+    background-color: #00a1ff;
+    border-radius: 10px;
+  }
+}
+
+.consult_text {
+  color: #2772bb;
+  font: normal 0.84rem Warface;
+}
+
+.main {
+  max-width: 940px;
+  width: 73.43%;
+  margin: 0 0 0 auto;
+}
+
+.swiper-slide{
+  background-size: cover;
+  .slide_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  *:not(.slide_back) {
+    position: relative;
+    z-index: 2;
+  }
+  .order-slider-wrap{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    .order_button{
+      margin: 0 auto;
+    }
+  }
+}
+
+.main_slider {
+  &, .swiper-slide{
+    height: 519px;
+  }
+  & .swiper-slide.slide-offer .order-slider-wrap{
+    bottom: 90px;
+  }
+}
+
+.main_slider,
+.works,
+.students,
+.warranty,
+.special,
+.order,
+.consult,
+.russia{
+  margin: 0 15px 15px 15px;
+  text-align: center;
+}
+
+.works,
+.students,
+.warranty,
+.special,
+.order,
+.consult,
+.russia{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.special{
+  text-align: left;
+  position: relative;
+  color: #fff;
+  .slide_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  *:not(.slide_back) {
+    position: relative;
+    z-index: 2;
+  }
+  .spec{
+    min-height: 519px;
+    margin-bottom: 15px;
+  }
+}
+
+h1.present_header {
+  margin: 43px 0;
+  color: white;
+  line-height: 63px;
+  font: normal 46px Warface;
+  text-shadow: #12477a 1px 0px, #12477a 1px 1px, #12477a 0px 1px, #12477a -1px 1px, #12477a -1px 0px, #12477a -1px -1px, #12477a 0px -1px, #12477a 1px -1px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, 1px 0 24.1px #464646;
+}
+
+.present_text {
+  max-width: 684px;
+  margin: 0 auto;
+  color: white;
+  font: normal 29px Arial;
+  line-height: 42px;
+  text-shadow: #12477a 1px 0px, #12477a 1px 1px, #12477a 0px 1px, #12477a -1px 1px, #12477a -1px 0px, #12477a -1px -1px, #12477a 0px -1px, #12477a 1px -1px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, 0 0 16.3px #323232;
+}
+
+.works, .students {
+  padding: 15px;
+  background-color: #e4f1f8;
+  color: $text2;
+  line-height: 38px;
+  text-align: left;
+  h1{
+    font: normal 1.84rem Warface;
+    line-height: 63px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  h2{
+    font: normal 1.52rem Arial;
+  }
+  ul.themes li{
+    margin-bottom: 30px;
+  }
+  .experience{
+    text-align: center;
+    font: normal 1.16rem Adventure;
+    h2{
+      font: normal 42px Adventure;
+    }
+  }
+}
+
+.students{
+  padding-bottom: 30px;
+  h1{
+    margin-bottom: 10px;
+  }
+}
+
+.warranty{
+  text-align: left;
+  color: $text2;
+  background-color: $back1;
+  padding-bottom: 30px;
+  ol{
+    list-style: decimal;
+    padding-left: 45px;
+    li{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.order, .consult{
+  form{
+    border: 0;
+  }
+}
+
+.order{
+  padding: 15px;
+  background-color: $back8;
+  color: #fff;
+  form{
+    legend{
+      font: normal 46px Warface;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .input_container{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    input[type="file"] {
+      background-color: #fff;
+      min-height: 400px;
+    }
+    select{
+      font: normal 0.64rem Warface;
+    }
+    textarea{
+      max-width: 823px;
+    }
+  }
+}
+
+.uploadHidden{
+  display: none;
+}
+
+.uploadButtonWrap{
+  width: 100%;
+}
+
+.uploadButton {
+  max-width: 320px;
+  min-height: 52px;
+  padding: 10px;
+  background-color: $back1;
+  color: #11477a;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+  &:hover{
+    background-color: $back6;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
+
+.uploadButton2{
+  background-color: $back4;
+  color: $back1;
+}
+
+.uploadedFile{
+  margin-bottom: 20px;
+}
+
+.deleteUploadedFile{
+  display: none;
+}
+
+.consult{
+  background-color: $back1;
+  padding: 15px;
+  .submit_button2{
+    max-width: 100%;
+  }
+}
+
+.mobile_menu{
+  display: none;
+}
+
+.mobile_menu i {
+  font-size: 40px;
+  color: #12477a;
+}
+
+.mobile_menu > * {
+  width: 65px;
+  height: 65px;
+  display: block;
+  padding: 13px 0 0 15px;
+}
+
+@import "media";
+@import "tooltip";

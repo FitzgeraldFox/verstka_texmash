@@ -1,0 +1,210 @@
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(property = "og:title", content = '{field name=pagetitle}')
+        meta(property = "og:type", content = "article")
+        meta(property = "og:image", content = '')
+        meta(property = "og:description", content = '{field name=introtext}')
+        meta(property="og:url", content='{$modx->makeUrl($modx->resource->get("id"))}')
+        meta(property="og:site_name", content='{config name=site_name}')
+        <!--метатеги для google+-->
+        meta(itemprop="name", content='{field name=pagetitle}')
+        meta(itemprop="description", content='{field name=introtext}')
+        meta(itemprop="image", content='')
+        title Авторские магистерские, дипломные, курсовые работы по Техмашу
+        link(rel="stylesheet", href="css/vendors.css")
+        link(rel="stylesheet", href="css/style.css")
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+        <![endif]-->
+        link(rel="icon", href="/favicon.ico",type="image/x-icon")
+        script(src="js/jquery-3.1.1.min.js")
+    body
+        div.container
+            aside.left_aside
+                .aside_child
+                    .top_menu
+                        img(src="images/logo.png").main_logo
+                        ul.contact_icons
+                            li.show_tooltip
+                                i(aria-hidden="true").fa.fa-eye
+                                .tooltip.change_font_size
+                                    div(data-font-size="0.9").change_fz_item
+                                        p A-
+                                    div(data-font-size="1.1").change_fz_item
+                                        p A+
+                                    div(data-size-dir="1", data-size-original="1").change_fz_item
+                                        p A
+                                    i.fa.fa-times.close-tooltip
+                            li.show_tooltip
+                                i(aria-hidden="true").fa.fa-phone
+                                .tooltip.phone_tooltip
+                                    a(href="tel:+79525405971") 89525405971
+                                    i.fa.fa-times.close-tooltip
+                            li.show_tooltip
+                                i(aria-hidden="true").fa.fa-envelope-o
+                                .tooltip.mail_tooltip
+                                    a(href="mailto:FitzgeraldFox@yandex.ru") FitzgeraldFox@yandex.ru
+                                    i.fa.fa-times.close-tooltip
+                            li
+                                a(href="https://vk.com/clubdiplomnik", target="_blank")
+                                    i(aria-hidden="true").fa.fa-vk
+                        .mobile_menu
+                            #mobile_menu
+                                i(aria-hidden="true").fa.fa-bars
+                    #main_menu_wrap.main_menu_wrap
+                        nav#main_menu.main_menu
+                            ul
+                                li
+                                    a(href="#works", data-menu-options='{"option":"1", "works":"1"}') Категории работ и цены
+                                li
+                                    a(href="#students", data-menu-options='{"option":"1", "students":"1"}') Обращение к студентам
+                                li
+                                    a(href="#warranty", data-menu-options='{"option":"1", "warranty":"1"}') Гарантии
+                                li
+                                    a(href="#special", data-menu-options='{"option":"1", "special":"1"}') Спецпредложения
+                                li
+                                    a(href="#order", data-menu-options='{"option":"1", "order":"1"}') Оформить заказ
+                                li
+                                    a(href="#consult", data-menu-options='{"option":"1", "consult":"1"}') Получить консультацию
+                                li
+                                    a(href="#russia", data-menu-options='{"option":"1", "russia":"1"}') Мы работаем по всей России!
+                        img(src="images/nail.jpg").author_photo
+                        p.consult_text По всем магистерским, дипломным и курсовым работам, выполненным нами можно получить консультацию у д.т.н., профессора, Чемборисова Наиля Анваровича
+                        .order_buttons_wrap
+                            a(href="#consult", data-menu-options='{"option":"1", "consult":"1"}').order_button
+                                p Получить консультацию
+                            a(href="#order", data-menu-options='{"option":"1", "order":"1"}').order_button
+                                p Оформить заказ
+            div.main
+                #main_slider.main_slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide.slide-offer
+                            img(src="images/slider/slide1.jpg").slide_back
+                            div.order-slider-wrap
+                                a(href="#order", data-menu-options='{"option":"1", "order":"1"}').order_button Заказать работу
+                        .swiper-slide
+                            img(src="images/slider/slide2.jpg").slide_back
+                        .swiper-slide
+                            img(src="images/slider/slide3.jpg").slide_back
+                        .swiper-slide.slide-catalog
+                            img(src="images/slider/slide4.jpg").slide_back
+                            div.order-slider-wrap
+                                a(href="#order", data-menu-options='{"option":"1", "order":"1"}').order_button Заказать работу
+                    .swiper-pagination
+                    .swiper-button-prev
+                    .swiper-button-next
+                main#main_container
+                    #works.works
+                        h1 Предлагаем заказать у нас работы
+                        ul.themes
+                            li
+                                p Магистерские диссертации по направлению:
+                                p - Конструкторско - технологическое обеспечение машиностроительных производств (технология машиностроения)
+                            li
+                                p Дипломные проекты по специальности:
+                                p - Наземные транспортно - технологические средства
+                            li
+                                p Выпускные работы
+                                p - Конструкторско - технологическое обеспечение машиностроительных производств
+                                p - Машиностроение (обработка металлов давлением)
+                            li
+                                p Курсовые работы по дисциплинам:
+                                p - Технологии машиностроения (ТМ)
+                                p - Режущему инструменту (РИ).
+                                p - Детали машин.
+                                p - Теория механизмов и машин.
+                                p - Оборудование машиностроительного производства, нормирование точности.
+                            li
+                                p А также контрольные по Физике и Математике.
+                        .experience
+                            h2 Опыт выполнения работ более 15 лет!
+                            p По всем магистерским диссертациям, дипломным и курсовым работам (проектам) дополнительно проводим консультации
+                        a(href="#order", data-menu-options='{"option":"1", "order":"1"}').order_button Заказать работу
+                    #students.students
+                        h1 Уважаемые студенты!
+                        h2 Ваши преимущества:
+                        ul
+                            li
+                                p - Вы заказываете работу без посредников;
+                            li
+                                p - Получаете нужный вам результат за разумную цену - экономите себе массу свободного времени и средств.
+                    #warranty.warranty
+                        h1.headerType1 Гарантийные обязательства
+                        ol
+                            li
+                                p Индивидуальный подход к решению Вашей задачи.
+                            li
+                                p Строгую конфиденциальность всех предоставленных Вами данных, включая личные данные и контактную информацию.
+                            li
+                                p Высокий уровень специалиста, выполняющего Вашу работу - наши работы являются авторскими и выполняются кандидатами наук.
+                                p Вы можете быть уверенными, что работа будет выполнена качественно, и что она будет высоко оценена преподлавателем.
+                            li
+                                p Высокую степень уникальности выполненной работы - все наши работы являются оригинальными как минимум на 75% и проходят проверку через систему «Антиплагиат».
+                            li
+                                p Внимательное отношение к Вам на всех этапах нашего сотрудничества - мы своевременно информируем о возможности выполнения работы, а также о всех изменениях статуса Вашего заказа.
+                            li
+                                p Бесплатная доработка выполненной работы осуществляется в случае выявления фактологических ошибок в допущенной работе или несоблюдения указанных Вами при оформлении заказа требований к оформлению работы.
+                    #special.special
+                        .spec
+                            img(src="images/spec/spec1.jpg").slide_back
+                        .spec
+                            img(src="images/spec/spec1.jpg").slide_back
+                    #order.order
+                        form(action="index.html").form_style1.order_form
+                            fieldset
+                                legend Оформить заказ
+                                .input_container
+                                    input(type="text", name="name", placeholder="Ф.И.О *", required)
+                                    input(type="tel", name="tel", placeholder="Телефон *", required)
+                                    input(type="email", name="email", placeholder="Email *", required)
+                                    select(required, name="cat")
+                                        option(value=0) Категория работы *
+                                        option(disabled) --Магистерская диссертация--
+                                        option(value=1) Конструкторско - технологическое обеспечение машиностроительных производств (технология машиностроения)
+                                        option(disabled) --Дипломный проект--
+                                        option(value=2) Наземные транспортно - технологические средства
+                                        option(disabled) --Выпускная работа--
+                                        option(value=3) Конструкторско - технологическое обеспечение машиностроительных производств
+                                        option(value=4) Машиностроение (обработка металлов давлением)
+                                        option(disabled) --Курсовая работа--
+                                        option(value=5) Технология машиностроения (ТМ)
+                                        option(value=6) Режущие инструменты (РИ)
+                                        option(value=7) Детали машин
+                                        option(value=8) Теория механизмов и машин
+                                        option(value=9) Оборудование машиностроительного производства, нормирование точности.
+                                        option(disabled) --Контрольная работа--
+                                        option(value=10) Физика
+                                        option(value=11) Математика
+                                    textarea(placeholder="Комментарии и пожелания", name="comment")
+                                    input(type="file", name="file")#order_upload_hidden.uploadHidden
+                                    p Вы можете отправить в архиве все нужные файлы
+                                    .uploadButtonWrap
+                                        #orderUploadButton.uploadButton Прикрепить файл
+                                        #orderDeleteUploadedFile.uploadButton.deleteUploadedFile Удалить файл
+                                    #orderUploadedFile.uploadedFile
+                                    button(type="submit").submit_button1 Оформить заказ
+                    #consult.consult
+                        form(action="index.html").form_style2.consult-form
+                            fieldset
+                                legend.headerType1 Отправьте файл работы <br>и получите консультацию
+                                p Или задайте интересующий вас вопрос
+                                input(type="text", placeholder="Ф.И.О *", required)
+                                input(type="tel", placeholder="Телефон *", required)
+                                input(type="email", placeholder="Email *", required)
+                                input(type="file", name="file")#consult_upload_hidden.uploadHidden
+                                textarea(placeholder="Текст вопроса")
+                                p Вы можете отправить в архиве все нужные файлы
+                                .uploadButtonWrap
+                                    #consultUploadButton.uploadButton.uploadButton2 Прикрепить файл
+                                    #consultDeleteUploadedFile.uploadButton.deleteUploadedFile Удалить файл
+                                #consultUploadedFile.uploadedFile
+                                button(type="submit").submit_button2 Получить консультацию
+                    #russia.russia
+                        h1.headerType1 Мы работаем по всей России!
+                        img(src="images/russia.png")
+    script(src="js/vendors.js")
+    script(src="js/script.js")

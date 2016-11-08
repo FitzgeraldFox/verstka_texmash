@@ -1,0 +1,737 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Warface';
+  src: url("../fonts/hinted-WarfaceRegularEnglish.eot");
+  src: local("WarfaceRegularEnglish"), url("../fonts/hinted-WarfaceRegularEnglish.eot?#iefix") format("embedded-opentype"), url("../fonts/hinted-WarfaceRegularEnglish.woff2") format("woff2"), url("../fonts/hinted-WarfaceRegularEnglish.woff") format("woff"), url("../fonts/hinted-WarfaceRegularEnglish.ttf") format("truetype"), url("../fonts/hinted-WarfaceRegularEnglish.svg#WarfaceRegularEnglish") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Adventure';
+  src: url("../fonts/hinted-Adventure.eot");
+  src: local("Adventure"), url("../fonts/hinted-Adventure.eot?#iefix") format("embedded-opentype"), url("../fonts/hinted-Adventure.woff2") format("woff2"), url("../fonts/hinted-Adventure.woff") format("woff"), url("../fonts/hinted-Adventure.ttf") format("truetype"), url("../fonts/hinted-Adventure.svg#Adventure") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-weight: normal;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+html * {
+  max-height: 1000000px;
+}
+
+body {
+  color: #12477a;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  cursor: pointer !important;
+}
+
+input[type="file"] {
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+}
+
+.headerType1 {
+  width: 100%;
+  text-shadow: #12477a 4px 4px, #12477a -4px 4px, #12477a 0px 4px, #12477a 4px -2px, #12477a -4px -2px, #12477a -4px -4px, #12477a 4px -4px, #12477a 0px -4px, #12477a 4px 0px, #12477a -4px 0, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, black 0 0 30px;
+  color: white;
+  font: normal 46px Warface;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.submit_button1, .submit_button2 {
+  background-color: #c9e4f4;
+  max-width: 393px;
+  padding: 20px 55px;
+  font: normal 33px Warface;
+  color: white;
+  text-shadow: #12477a 3px 0px, #12477a 3px 3px, #12477a 0px 3px, #12477a -3px 0px, #12477a -3px 3px, #12477a -3px 0px, #12477a -3px -3px, #12477a 0px -3px, #12477a 3px -3px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+.submit_button1:hover, .submit_button2:hover {
+  background-color: #0095ff;
+  color: #0095ff;
+  border-radius: 10px;
+}
+
+.submit_button1:hover {
+  color: #ffffff;
+}
+
+.submit_button2 {
+  background-color: #12477a;
+  color: #12477a;
+  text-shadow: #b4e7ff 3px 0px, #b4e7ff 3px 3px, #b4e7ff 0px 3px, #b4e7ff -3px 0px, #b4e7ff -3px 3px, #b4e7ff -3px 0px, #b4e7ff -3px -3px, #b4e7ff 0px -3px, #b4e7ff 3px -3px;
+}
+
+.form_style1 input, .form_style1 select, .form_style1 textarea, .form_style2 input, .form_style2 select, .form_style2 textarea {
+  width: 45%;
+  height: 59px;
+  font: normal 1rem Warface;
+  color: #12477a;
+  box-shadow: inset 3px 0 8.7px 0.3px #6c6c6c;
+  border: 0;
+  padding: 0 20px;
+  margin: 18px;
+  min-width: 300px;
+}
+.form_style1 input:hover, .form_style1 input:focus, .form_style1 select:hover, .form_style1 select:focus, .form_style1 textarea:hover, .form_style1 textarea:focus, .form_style2 input:hover, .form_style2 input:focus, .form_style2 select:hover, .form_style2 select:focus, .form_style2 textarea:hover, .form_style2 textarea:focus {
+  box-shadow: inset 3px 0 8.7px 0.3px #0083ff;
+}
+.form_style1 input::-webkit-input-placeholder, .form_style1 select::-webkit-input-placeholder, .form_style1 textarea::-webkit-input-placeholder, .form_style2 input::-webkit-input-placeholder, .form_style2 select::-webkit-input-placeholder, .form_style2 textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #12477a;
+}
+.form_style1 input:-moz-placeholder, .form_style1 select:-moz-placeholder, .form_style1 textarea:-moz-placeholder, .form_style2 input:-moz-placeholder, .form_style2 select:-moz-placeholder, .form_style2 textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #12477a;
+}
+.form_style1 input::-moz-placeholder, .form_style1 select::-moz-placeholder, .form_style1 textarea::-moz-placeholder, .form_style2 input::-moz-placeholder, .form_style2 select::-moz-placeholder, .form_style2 textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #12477a;
+}
+.form_style1 input:-ms-input-placeholder, .form_style1 select:-ms-input-placeholder, .form_style1 textarea:-ms-input-placeholder, .form_style2 input:-ms-input-placeholder, .form_style2 select:-ms-input-placeholder, .form_style2 textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #12477a;
+}
+.form_style1 textarea, .form_style2 textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.form_style2 input, .form_style2 select, .form_style2 textarea {
+  width: 100%;
+  max-width: 598px;
+  margin: 9px 18px;
+  background-color: #6489ac;
+  box-shadow: inset 3px 0 8.7px 0.3px #1e2a35;
+  color: #b4e7ff;
+}
+.form_style2 input::-webkit-input-placeholder, .form_style2 select::-webkit-input-placeholder, .form_style2 textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #b4e7ff;
+}
+.form_style2 input:-moz-placeholder, .form_style2 select:-moz-placeholder, .form_style2 textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b4e7ff;
+}
+.form_style2 input::-moz-placeholder, .form_style2 select::-moz-placeholder, .form_style2 textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b4e7ff;
+}
+.form_style2 input:-ms-input-placeholder, .form_style2 select:-ms-input-placeholder, .form_style2 textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #b4e7ff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.left_aside {
+  background-color: #e4f1f8;
+  padding: 15px;
+  position: fixed;
+  max-width: 340px;
+  width: 25.56%;
+  max-height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  z-index: 100;
+}
+.left_aside::-webkit-scrollbar {
+  width: 0;
+}
+
+.aside_child {
+  overflow: hidden;
+}
+
+.contact_icons {
+  text-align: center;
+  position: relative;
+}
+.contact_icons li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+  width: 54px;
+  height: 36px;
+  cursor: pointer;
+}
+.contact_icons i {
+  font-size: 40px;
+  color: #12477a;
+  transition: color 0.15s ease-in-out;
+}
+.contact_icons i:hover {
+  color: #0095ff;
+}
+
+.main_menu li a {
+  display: block;
+  width: 100%;
+  font: normal 0.92rem Warface;
+  color: #005ab0;
+  padding: 5px;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+.main_menu li a:hover, .main_menu li a.active {
+  background-color: #00a0ff;
+  color: #fff;
+}
+.main_menu li:not(:last-child) {
+  border-bottom: 1px dotted #357ebd;
+}
+
+.order_button {
+  color: white;
+  font: normal 25px Warface;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 29px 20px;
+  margin: 23px auto;
+  max-width: 310px;
+  cursor: pointer;
+  background-color: #1f6fbd;
+  transition: background-color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+.order_button:hover {
+  background-color: #00a1ff;
+  border-radius: 10px;
+}
+
+.consult_text {
+  color: #2772bb;
+  font: normal 0.84rem Warface;
+}
+
+.main {
+  max-width: 940px;
+  width: 73.43%;
+  margin: 0 0 0 auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+}
+.swiper-slide .slide_back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.swiper-slide *:not(.slide_back) {
+  position: relative;
+  z-index: 2;
+}
+.swiper-slide .order-slider-wrap {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+.swiper-slide .order-slider-wrap .order_button {
+  margin: 0 auto;
+}
+
+.main_slider, .main_slider .swiper-slide {
+  height: 519px;
+}
+.main_slider .swiper-slide.slide-offer .order-slider-wrap {
+  bottom: 90px;
+}
+
+.main_slider,
+.works,
+.students,
+.warranty,
+.special,
+.order,
+.consult,
+.russia {
+  margin: 0 15px 15px 15px;
+  text-align: center;
+}
+
+.works,
+.students,
+.warranty,
+.special,
+.order,
+.consult,
+.russia {
+  display: none;
+}
+.works.active,
+.students.active,
+.warranty.active,
+.special.active,
+.order.active,
+.consult.active,
+.russia.active {
+  display: block;
+}
+
+.special {
+  text-align: left;
+  position: relative;
+  color: #fff;
+}
+.special .slide_back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.special *:not(.slide_back) {
+  position: relative;
+  z-index: 2;
+}
+.special .spec {
+  min-height: 519px;
+  margin-bottom: 15px;
+}
+
+h1.present_header {
+  margin: 43px 0;
+  color: white;
+  line-height: 63px;
+  font: normal 46px Warface;
+  text-shadow: #12477a 1px 0px, #12477a 1px 1px, #12477a 0px 1px, #12477a -1px 1px, #12477a -1px 0px, #12477a -1px -1px, #12477a 0px -1px, #12477a 1px -1px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, 1px 0 24.1px #464646;
+}
+
+.present_text {
+  max-width: 684px;
+  margin: 0 auto;
+  color: white;
+  font: normal 29px Arial;
+  line-height: 42px;
+  text-shadow: #12477a 1px 0px, #12477a 1px 1px, #12477a 0px 1px, #12477a -1px 1px, #12477a -1px 0px, #12477a -1px -1px, #12477a 0px -1px, #12477a 1px -1px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, #12477a 0 0 3px, 0 0 16.3px #323232;
+}
+
+.works, .students {
+  padding: 15px;
+  background-color: #e4f1f8;
+  color: #12477a;
+  line-height: 38px;
+  text-align: left;
+}
+.works h1, .students h1 {
+  font: normal 1.84rem Warface;
+  line-height: 63px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.works h2, .students h2 {
+  font: normal 1.52rem Arial;
+}
+.works ul.themes li, .students ul.themes li {
+  margin-bottom: 30px;
+}
+.works .experience, .students .experience {
+  text-align: center;
+  font: normal 1.16rem Adventure;
+}
+.works .experience h2, .students .experience h2 {
+  font: normal 42px Adventure;
+}
+
+.students {
+  padding-bottom: 30px;
+}
+.students h1 {
+  margin-bottom: 10px;
+}
+
+.warranty {
+  text-align: left;
+  color: #12477a;
+  background-color: #c9e4f4;
+  padding-bottom: 30px;
+}
+.warranty ol {
+  list-style: decimal;
+  padding-left: 45px;
+}
+.warranty ol li {
+  margin-bottom: 20px;
+}
+
+.order form, .consult form {
+  border: 0;
+}
+
+.order {
+  padding: 15px;
+  background-color: #0f5796;
+  color: #fff;
+}
+.order form legend {
+  font: normal 46px Warface;
+  margin: 20px 0;
+  width: 100%;
+}
+.order form .input_container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.order form input[type="file"] {
+  background-color: #fff;
+  min-height: 400px;
+}
+.order form select {
+  font: normal 0.64rem Warface;
+}
+.order form textarea {
+  max-width: 823px;
+}
+
+.uploadHidden {
+  display: none;
+}
+
+.uploadButtonWrap {
+  width: 100%;
+}
+
+.uploadButton {
+  max-width: 320px;
+  min-height: 52px;
+  padding: 10px;
+  background-color: #c9e4f4;
+  color: #11477a;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+.uploadButton:hover {
+  background-color: #0095ff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.uploadButton2 {
+  background-color: #12477a;
+  color: #c9e4f4;
+}
+
+.uploadedFile {
+  margin-bottom: 20px;
+}
+
+.deleteUploadedFile {
+  display: none;
+}
+
+.consult {
+  background-color: #c9e4f4;
+  padding: 15px;
+}
+.consult .submit_button2 {
+  max-width: 100%;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.mobile_menu i {
+  font-size: 40px;
+  color: #12477a;
+}
+
+.mobile_menu > * {
+  width: 65px;
+  height: 65px;
+  display: block;
+  padding: 13px 0 0 15px;
+}
+
+@media (max-width: 980px) {
+  .main_slider, .works, .students, .warranty, .special, .order, .consult, .russia {
+    margin: 0;
+  }
+
+  .left_aside {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 71px;
+    padding: 5px;
+    overflow: initial;
+  }
+
+  .left_aside .order_buttons_wrap {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .left_aside .order_button {
+    max-width: 320px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .top_menu {
+    display: flex;
+  }
+
+  .author_photo, .consult_text {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  .main_menu_wrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+    background-color: #e4f1f8;
+  }
+
+  .main_menu li a {
+    padding: 0 5px;
+  }
+
+  .aside_child {
+    overflow: initial;
+  }
+
+  .main_logo {
+    max-width: 200px;
+    max-height: 61px;
+  }
+
+  .contact_icons {
+    max-width: 300px;
+  }
+
+  .contact_icons li {
+    margin: 0;
+    height: 60px;
+    padding-top: 16px;
+  }
+
+  .contact_icons li a {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 71px;
+  }
+}
+@media (max-width: 800px) {
+  .form_style1 input, .form_style1 select, .form_style1 textarea, .form_style2 input, .form_style2 select, .form_style2 textarea {
+    width: 100%;
+  }
+
+  .form_style2 input, .form_style2 select, .form_style2 textarea {
+    margin: 0 0 10px 0;
+  }
+
+  .main_slider, .main_slider .swiper-slide {
+    height: 450px;
+  }
+
+  .main_slider .swiper-slide.slide-offer .order-slider-wrap {
+    bottom: 30px;
+  }
+
+  .slide-catalog .order-slider-wrap .order_button {
+    padding: 15px 5px;
+    bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contact_icons {
+    margin: 17px 0 0 5px;
+  }
+
+  .contact_icons li {
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+  }
+  .contact_icons li a {
+    padding: 5px 0;
+  }
+
+  .contact_icons i {
+    font-size: 30px;
+  }
+
+  .headerType1 {
+    font: normal 36px Warface;
+  }
+
+  .order_button {
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 450px) {
+  .main_slider {
+    display: none;
+  }
+
+  .contact_icons li {
+    width: 30px;
+  }
+}
+.tooltip {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  z-index: 200;
+}
+
+.tooltip a {
+  color: #12477a;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.tooltip.phone_tooltip a {
+  font-size: 1.1rem;
+}
+
+.tooltip.mail_tooltip a {
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+
+.tooltip .close-tooltip {
+  font-size: 27px;
+  position: absolute;
+  right: 6px;
+  top: 0px;
+}
+
+.tooltip.phone_tooltip a:hover {
+  color: #3fa0ff;
+}
+
+.change_font_size > .change_fz_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-height: 60px;
+  font-size: 41px;
+}
+
+.change_font_size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change_fz_item:hover, .change_fz_item:active, .change_fz_item:focus {
+  background-color: #12477a;
+  color: #fff;
+}
+
+.change_fz_item {
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}

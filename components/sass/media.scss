@@ -1,0 +1,133 @@
+@media (max-width: 980px) {
+  .main_slider, .works, .students, .warranty, .special, .order, .consult, .russia{
+    margin: 0;
+  }
+
+  .left_aside {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 71px;
+    padding: 5px;
+    overflow: initial;
+  }
+  .left_aside .order_buttons_wrap{
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .left_aside .order_button{
+    max-width: 320px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .top_menu {display: flex;}
+
+  .author_photo, .consult_text{
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  .main_menu_wrap{
+    display: none;
+    position: absolute;
+    left:0;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+    background-color: #e4f1f8;
+  }
+  
+  .main_menu li a{
+    padding: 0 5px;
+  }
+
+  .aside_child {
+    overflow: initial;
+  }
+
+  .main_logo {
+    max-width: 200px;
+    max-height: 61px;
+  }
+
+  .contact_icons {
+    max-width: 300px;
+  }
+
+  .contact_icons li{
+    margin: 0;
+    height: 60px;
+    padding-top: 16px;
+  }
+  .contact_icons li a{
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 71px;
+  }
+}
+@media (max-width: 800px) {
+  .form_style1 input, .form_style1 select, .form_style1 textarea, .form_style2 input, .form_style2 select, .form_style2 textarea{
+    width: 100%;
+  }
+  .form_style2{
+    input,  select, textarea{
+      margin: 0 0 10px 0;
+    }
+  }
+  .main_slider, .main_slider .swiper-slide{
+    height: 450px;
+  }
+
+  .main_slider .swiper-slide.slide-offer .order-slider-wrap{
+    bottom: 30px;
+  }
+
+  .slide-catalog .order-slider-wrap .order_button{
+    padding: 15px 5px;
+    bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contact_icons{
+    margin: 17px 0 0 5px;
+  }
+  .contact_icons li{
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    a{
+      padding: 5px 0;
+    }
+  }
+  .contact_icons i{
+    font-size: 30px;
+  }
+  .headerType1{
+    font: normal 36px Warface;
+  }
+  .order_button{
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main_slider{
+    display: none;
+  }
+  .contact_icons li{
+    width: 30px;
+  }
+}
